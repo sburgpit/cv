@@ -14,7 +14,14 @@ const Header: FC = () => {
         <div className={cn(css.Header__Name, 'hover')} onClick={clickHandler}>
           {i18n('Peter Konokhov')}
         </div>
-        <div className={cn(css.Header__Action, 'hover')}>{i18n('Get in touch')}</div>
+        <a
+          href={'mailto:sburgpit@gmail.com'}
+          target='_blank'
+          rel='noopener noreferrer'
+          className={cn(css.Header__Action, 'hover')}
+        >
+          {i18n('Get in touch')}
+        </a>
       </Fade>
     </div>
   )
