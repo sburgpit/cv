@@ -1,0 +1,16 @@
+@import '../../assets/scss/vars';
+
+.Footer {
+  height: 100px;
+  padding-bottom: 50px;
+  background: $background;
+  color: $textColor;
+  font-family: $textFont;
+  font-size: $FZ_text_small;
+  font-weight: 600;
+  text-align: center;
+
+  @media (max-width: 992px) {
+    font-size: 24px;
+  }
+}

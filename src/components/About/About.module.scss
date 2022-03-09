@@ -1,0 +1,39 @@
+@import '../../assets/scss/vars';
+
+.About {
+  padding: 150px 0;
+  height: 100vh;
+}
+
+.About__Main {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  font-size: $FZ_text;
+  font-family: $textFont;
+  color: $textColor;
+  position: relative;
+  font-weight: 300;
+}
+
+@media (max-width: 992px) {
+  .About {
+    height: auto;
+    padding-bottom: 250px;
+  }
+
+  .About__Main {
+    font-size: 48px;
+    width: auto;
+  }
+
+  @media (max-width: 768px) {
+    .About__Main {
+      font-size: 36px;
+
+      @media (max-width: 425px) {
+        font-size: 24px;
+      }
+    }
+  }
+}

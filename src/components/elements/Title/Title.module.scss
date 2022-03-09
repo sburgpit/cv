@@ -1,0 +1,41 @@
+@import '../../../assets/scss/vars';
+
+.Title {
+  font-size: $FZ_title;
+  color: $textColor;
+  font-family: $headersFont;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 100px;
+
+  &__Icon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.66s all 0.22s;
+
+    svg {
+      fill: $textColor;
+      margin-right: 30px;
+      opacity: 0.5;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  @media (max-width: 992px) {
+    font-size: 64px;
+    margin: 0 50px 100px 50px;
+
+    @media (max-width: 787px) {
+      font-size: 10vw;
+      margin: 0 0 100px 0;
+    }
+  }
+}

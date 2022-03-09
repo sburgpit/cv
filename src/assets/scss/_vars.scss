@@ -1,0 +1,22 @@
+$background: #121212;
+$textColor: #d6d1ce;
+$headersFont: 'Russo One', sans-serif;
+$textFont: 'Montserrat', sans-serif;
+
+$FZ_firstScreenTitle: 13.5vw;
+$FZ_firstScreenComment: 2vw;
+$FZ_title: 8vw;
+$FZ_text: 2.2vw;
+$FZ_text_small: 1.2vw;
+$FZ_text_big: 10vw;
+$FZ_header: 1.9vw;
+
+@keyframes spiner {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

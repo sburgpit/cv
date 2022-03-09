@@ -1,0 +1,57 @@
+@import '../../assets/scss/vars';
+
+.Skills {
+  padding-bottom: 150px;
+  height: 100vh;
+}
+
+.Skills__Main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.Skills__Main__Item {
+  font-size: $FZ_text;
+  color: $textColor;
+  padding: 10px 15px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  font-family: $textFont;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .Skills {
+    height: auto;
+  }
+
+  .Skills__Main {
+    width: auto;
+  }
+
+  .Skills__Main__Item {
+    font-size: 48px;
+    padding: 10px 15px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 768px) {
+    .Skills__Main__Item {
+      font-size: 36px;
+      padding: 7px 10px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+
+      @media (max-width: 425px) {
+        font-size: 24px;
+        padding: 0 0;
+        margin-left: 20px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
