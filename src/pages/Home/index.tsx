@@ -4,10 +4,12 @@ import FirstScreen from '../../components/FirstScreen'
 import About from '../../components/About'
 import Experience from '../../components/Experience'
 import Skills from '../../components/Skills'
+import More from '../../components/More/More'
 import GetMe from '../../components/GetMe'
 import Footer from '../../components/Footer'
 
 import css from './Home.module.scss'
+
 
 const Home: FC = () => {
   return (
@@ -18,6 +20,7 @@ const Home: FC = () => {
         <About />
         <Experience />
         <Skills />
+        <More />
         <GetMe />
       </div>
       <Footer />

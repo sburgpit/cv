@@ -1,0 +1,67 @@
+@import '../../assets/scss/vars';
+
+.More {
+  padding-bottom: 150px;
+}
+
+.More__Main {
+  width: 70%;
+  margin: 0 auto;
+  font-size: $FZ_text;
+  font-family: $textFont;
+  color: $textColor;
+  position: relative;
+}
+
+.More__Main__Question {
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.More__Main__Answer {
+  font-weight: 300;
+  text-align: right;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.More__Link {
+  position: relative;
+  transition: 0.33s all;
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: $textColor;
+    right: 0;
+    bottom: 3px;
+    opacity: 0.5;
+    transition: 0.33s all;
+  }
+
+  &:hover {
+    padding-bottom: 5px;
+
+    &:after {
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .More__Main {
+    font-size: 48px;
+    width: auto;
+
+    @media (max-width: 768px) {
+      font-size: 36px;
+
+      @media (max-width: 425px) {
+        font-size: 24px;
+      }
+    }
+  }
+}

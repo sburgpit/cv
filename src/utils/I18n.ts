@@ -24,8 +24,18 @@ const localization: { [key: string]: string } = {
   'Mar. 2021 - Present': 'Мар. 2021 - Настоящее время',
   'Advertising platform': 'Рекламная платформа',
   Skills: 'Навыки',
-  'Programming is my passion, not just a job. I open up new horizons every day and I believe that there are no impossible tasks. I am a fast learner and understand new technologies. Learning is my state of mind.':
-    'Программирование - это моя страсть, а не просто работа. Я каждый день открываю новые горизонты и верю, что невыполнимых задач не бывает. Я быстро учусь и разбираюсь в новых технологиях. Учеба - состояние моей души.',
+  'Programming is not just a job for me, it is my passion. I open up new horizons every day and I believe that there are no impossible tasks. I’m fast to learn and understand new technologies. Learning is my state of mind.':
+    'Программирование - это моя жизнь, а не просто работа. Каждый день я открываю новые горизонты и верю, что невыполнимых задач не бывает. Быстро учусь и разбираюсь в новых технологиях. Развитие - состояние моего сознания.',
+  'More me': 'Еще обо мне',
+  'How old are you?': 'Сколько вам лет ?',
+  '20 y.o.': '20 лет.',
+  'What languages do you know ?': 'Какими языками владеете ?',
+  'Ukrainian (native), Russian (native), English (B1 - in studying).':
+    'Український (рідний), Русский (родной), English (B1 - в процессе изучения).',
+  'Where is your location ?': 'Где живете ?',
+  "I'm a nomad.": 'Я путешествую.',
+  'How can I get you ?': 'Как я могу с вами связаться ?',
+  'Write to my email': 'Напишите мне на email  '
 }
 
 export default I18n

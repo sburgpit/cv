@@ -25,7 +25,7 @@ const Skills: FC = () => {
       <Title text={I18n('Skills')} />
       <div className={css.Skills__Main}>
         {skills.map((i, index) => (
-          <Fade delay={300 + (index + 1) * 100}>
+          <Fade delay={100 + (index + 1) * 100}>
           <div className={css.Skills__Main__Item} key={index}>
             {i}
           </div>

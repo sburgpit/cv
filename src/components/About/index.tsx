@@ -11,7 +11,7 @@ const About: FC = () => {
       <Fade duration={2000}>
         <div className={css.About__Main}>
           {I18n(
-            'Programming is my passion, not just a job. I open up new horizons every day and I believe that there are no impossible tasks. I am a fast learner and understand new technologies. Learning is my state of mind.'
+            'Programming is not just a job for me, it is my passion. I open up new horizons every day and I believe that there are no impossible tasks. I’m fast to learn and understand new technologies. Learning is my state of mind.'
           )}
         </div>
       </Fade>
