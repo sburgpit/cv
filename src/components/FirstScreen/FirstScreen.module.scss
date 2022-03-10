@@ -43,7 +43,6 @@
 
 @media (max-width: 992px) {
   .FirstScreen {
-    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,7 +87,7 @@
 
   @media (max-width: 768px) {
     .FirstScreen {
-      margin-top: 150px;
+      margin-top: 15vh;
     }
 
     .FirstScreen__Wrapper {
@@ -100,11 +99,11 @@
       &:nth-child(1) {
         font-size: 23.4vw;
       }
-  
+
       &:nth-child(2) {
         font-size: 17.1vw;
       }
-  
+
       &:nth-child(3) {
         font-size: 15.2vw;
       }
@@ -113,6 +112,12 @@
     .FirstScreen__Word__Comment {
       font-size: 10vw;
       margin-top: 50px;
+    }
+
+    @media (max-width: 560px) {
+      .FirstScreen {
+        margin-top: 0vh;
+      }
     }
   }
 }
