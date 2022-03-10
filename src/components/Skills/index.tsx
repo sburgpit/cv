@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import i18n from '../../utils/i18n'
+import I18n from '../../utils/I18n'
 import { Fade } from 'react-awesome-reveal'
 import Title from '../elements/Title'
 import css from './Skills.module.scss'
@@ -22,7 +22,7 @@ const Skills: FC = () => {
 
   return (
     <section className={css.Skills}>
-      <Title text={i18n('Skills')} />
+      <Title text={I18n('Skills')} />
       <div className={css.Skills__Main}>
         {skills.map((i, index) => (
           <Fade delay={300 + (index + 1) * 100}>

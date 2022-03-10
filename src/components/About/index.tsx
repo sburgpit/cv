@@ -1,17 +1,17 @@
 import { FC } from 'react'
 import Title from '../elements/Title'
 import { Fade } from 'react-awesome-reveal'
-import i18n from '../../utils/i18n'
+import I18n from '../../utils/I18n'
 import css from './About.module.scss'
 
 const About: FC = () => {
   return (
     <section className={css.About}>
-      <Title text={i18n('About me')} />
+      <Title text={I18n('About me')} />
       <Fade duration={2000}>
         <div className={css.About__Main}>
-          {i18n(
-            'Programming is not just a job for me, it is my passion. While programming, I am also constantly re/writing my own code. Learning is my state of mind.'
+          {I18n(
+            'Programming is my passion, not just a job. I open up new horizons every day and I believe that there are no impossible tasks. I am a fast learner and understand new technologies. Learning is my state of mind.'
           )}
         </div>
       </Fade>

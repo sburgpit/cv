@@ -2,7 +2,7 @@ import { FC } from 'react'
 import SVGIcon from '../elements/SVGIcon'
 import { ArcText } from '@arctext/react'
 import { Zoom } from 'react-awesome-reveal'
-import i18n from '../../utils/i18n'
+import I18n from '../../utils/I18n'
 import cn from 'classnames'
 import css from './GetMe.module.scss'
 
@@ -18,7 +18,7 @@ const GetMe: FC = () => {
         >
           <SVGIcon name={'arrow'} width={300} height={300} fill={'#d6d1ce'} />
           <ArcText
-            text={`${i18n('Get me here')} ✽ ${i18n('Get me here')} ✽ `}
+            text={'Get me here ✽ Get me here ✽ '}
             radius={150}
             characterWidth={12.7}
             className={css.GetMe__Button__ArcText}
