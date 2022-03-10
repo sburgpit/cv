@@ -8,9 +8,9 @@ import css from './More.module.scss'
 const More: FC = () => {
   const more = {
     [I18n('How old are you?')]: I18n('20 y.o.'),
-    [I18n('What languages do you know ?')]: I18n('Ukrainian (native), Russian (native), English (B1 - in studying).'),
-    [I18n('Where is your location ?')]: I18n("I'm a nomad."),
-    [I18n('How can I get you ?')]: (
+    [I18n('What languages do you know?')]: I18n('Ukrainian (native), Russian (native), English (B1 - in studying).'),
+    [I18n('Where is your location?')]: I18n("I'm a nomad."),
+    [I18n('How can I get you?')]: (
       <>
         {I18n('Write to my email') + ' '}
         <a
