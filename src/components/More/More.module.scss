@@ -5,7 +5,7 @@
 }
 
 .More__Main {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
   font-size: $FZ_text;
   font-family: $textFont;
@@ -16,14 +16,18 @@
 .More__Main__Question {
   font-weight: 600;
   text-align: left;
-  margin-bottom: 20px;
 }
 
 .More__Main__Answer {
   font-weight: 300;
   text-align: right;
-  position: relative;
-  margin-bottom: 60px;
+}
+
+.More__Main__Wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 100px;
 }
 
 .More__Link {
@@ -53,14 +57,37 @@
 
 @media (max-width: 992px) {
   .More__Main {
-    font-size: 48px;
     width: auto;
+    &__Wrapper {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__Question {
+      text-align: center;
+    }
+    
+    &__Answer {
+      text-align: center;
+    }
+
+    font-size: 48px;
+    width: 95%;
 
     @media (max-width: 768px) {
       font-size: 36px;
 
+      &__Wrapper {
+        margin-bottom: 60px;
+      }
+
       @media (max-width: 425px) {
         font-size: 24px;
+
+        &__Wrapper {
+          margin-bottom: 40px;
+        }
       }
     }
   }

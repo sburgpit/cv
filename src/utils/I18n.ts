@@ -10,7 +10,7 @@ const I18n = (str: string): string => {
 }
 
 const localization: { [key: string]: string } = {
-  'Peter Konokhov': 'Петр Конохов',
+  'Peter Konokhov': 'Пётр Конохов',
   'Get in touch': 'Связаться',
   'Go home': 'Домой',
   'Page not found': 'Страница не найдена',
@@ -27,15 +27,16 @@ const localization: { [key: string]: string } = {
   'Programming is not just a job for me, it is my passion. I open up new horizons every day and I believe that there are no impossible tasks. I’m fast to learn and understand new technologies. Learning is my state of mind.':
     'Программирование - это моя жизнь, а не просто работа. Каждый день я открываю новые горизонты и верю, что невыполнимых задач не бывает. Быстро учусь и разбираюсь в новых технологиях. Развитие - состояние моего сознания.',
   'More me': 'Еще обо мне',
-  'How old are you?': 'Сколько вам лет?',
-  '20 y.o.': '20 лет.',
-  'What languages do you know?': 'Какими языками владеете?',
-  'Ukrainian (native), Russian (native), English (B1 - in studying).':
-    'Український (рідний), Русский (родной), English (B1 - в процессе изучения).',
-  'Where is your location?': 'Где живете?',
-  "I'm a nomad.": 'Я путешествую.',
-  'How can I get you?': 'Как я могу с вами связаться?',
-  'Write to my email': 'Напишите мне на email  '
+  Age: 'Возраст',
+  '20 y.o.': '20 лет',
+  Languages: 'Языки',
+  'Ukrainian&nbsp;(native), Russian&nbsp;(native), English&nbsp;(B1&nbsp;-&nbsp;in&nbsp;studying)':
+    'Український&nbsp;(рідний), Русский&nbsp;(родной), English(B1&nbsp;-&nbsp;в&nbsp;процессе изучения)',
+  Location: 'Местоположение',
+  "I'm a nomad": 'Путешествую',
+  Contacts: 'Контакты',
+  Nationality: 'Национальность',
+  Ukrainian: 'Украинец',
 }
 
 export default I18n

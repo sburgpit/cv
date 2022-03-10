@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import { Slide } from 'react-awesome-reveal'
 
 import cn from 'classnames'
 import css from './Lang.module.scss'
@@ -11,9 +12,9 @@ const Lang: FC<{ lang: string; setLang: (lang: string) => any }> = ({ lang, setL
   }
 
   return (
-    <div className={cn(css.Lang, 'hover')} onClick={clickHandler}>
-      <p>{lang === 'ru' ? 'en' : 'ru'}</p>
-    </div>
+    <Slide direction={'right'} className={cn(css.Lang, 'hover')}>
+      <p onClick={clickHandler}>{lang === 'ru' ? 'en' : 'ru'}</p>
+    </Slide>
   )
 }
 

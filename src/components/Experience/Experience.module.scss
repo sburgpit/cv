@@ -8,6 +8,10 @@
   text-align: center;
   width: 80%;
   margin: 0 auto;
+
+  & > div:first-child {
+    margin-bottom: 150px;
+  }
 }
 
 .Experience__Main__Article {
@@ -33,10 +37,6 @@
   &__Details {
     font-size: $FZ_text;
     font-weight: 300;
-  }
-
-  &:first-child {
-    margin-bottom: 150px;
   }
 }
 
@@ -69,10 +69,7 @@
         font-size: 36px;
       }
 
-      
-
-      @media (max-width: 425px) {
-
+      @media (max-width: 560px) {
         &__Date {
           font-size: 7vw;
         }
@@ -82,12 +79,12 @@
         }
 
         &__Company {
-        font-size: 15vw;
+          font-size: 12vw;
 
-        &__Details {
-          font-size: 7vw;
+          &__Details {
+            font-size: 7vw;
+          }
         }
-      }
       }
     }
   }
