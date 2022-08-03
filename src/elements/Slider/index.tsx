@@ -12,6 +12,8 @@ export interface ISlider {
 }
 
 const Slider: FC<ISlider> = ({ children }) => {
+  const [width, setWidth] = useState<number | string>('100%')
+  const [height, setHeight] = useState<number | string>('100%')
   const [dark, setDark] = useState<boolean>(false)
   const hash = useAppSelector((state) => state.app.currentHash)
 
@@ -23,16 +25,31 @@ const Slider: FC<ISlider> = ({ children }) => {
     }
   }, [hash])
 
+  const resizeHandler = () => {
+    setHeight(window.innerHeight)
+    setWidth(window.innerWidth)
+    console.log(window.innerHeight)
+    console.log(window.innerWidth)
+  }
+
+  useEffect(() => {
+    resizeHandler()
+    window.addEventListener('resize', resizeHandler)
+    return () => {
+      window.addEventListener('resize', resizeHandler)
+    }
+  }, [])
+
   return (
     <Splide
       hasTrack={false}
       className={cn('main-slider', css.Slider)}
       tag={'section'}
       options={{
-        width: '100vw',
-        height: '100vh',
-        fixedWidth: '100vw',
-        fixedHeight: '100vh',
+        width: width,
+        height: height,
+        fixedWidth: width,
+        fixedHeight: height,
         direction: 'ttb',
         paginationDirection: 'ttb',
         waitForTransition: true,
