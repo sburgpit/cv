@@ -3,7 +3,7 @@ import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide'
 import { Fade } from 'react-awesome-reveal'
 import cn from 'classnames'
 import css from './ExpSlide.module.scss'
-import ExpSliderSlide from '../../../elements/ExpSlide'
+import ExpSliderSlide from '../../../elements/ExpSliderSlide'
 
 const ExpSlide: FC = () => {
   return (
