@@ -1,0 +1,140 @@
+.MoreMe {
+  position: relative;
+  background-color: #e1e7ee;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  transition: background-color 1.333s;
+}
+
+.MoreMe__Title {
+  font-size: 100px;
+  font-weight: 800;
+  color: #3025e9;
+  text-align: center;
+  margin-bottom: 150px;
+  transition: color 1.333s;
+}
+
+.MoreMe__Wrapper {
+  width: 1400px;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  align-content: center;
+}
+
+.MoreMe__List {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.MoreMe__List__Item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #cdcfff;
+  color: #3025e9;
+  font-size: 32px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  transition: color 1.333s, border-color 1.333s;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &__Value {
+    font-weight: 600;
+    text-align: right;
+  }
+
+  a {
+    color: #3025e9;
+    transition: color 1.333s;
+  }
+}
+
+@media (max-width: 1620px) {
+  .MoreMe__Title {
+    font-size: 86px;
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .MoreMe__Wrapper {
+    width: 100vw;
+    padding: 0 90px;
+  }
+
+  .MoreMe__List {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1220px) {
+  .MoreMe__Title {
+    font-size: 72px;
+    margin-bottom: 50px;
+  }
+
+  .MoreMe__List__Item {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .MoreMe__Title {
+    font-size: 68px;
+  }
+
+  .MoreMe__List__Item {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 820px) {
+  .MoreMe__Title {
+    font-size: 52px;
+  }
+
+  .MoreMe__List__Item {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .MoreMe__Wrapper {
+    padding: 0 60px;
+  }
+  .MoreMe__Title {
+    font-size: 52px;
+  }
+
+  .MoreMe__List__Item {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 520px) {
+  .MoreMe__Title {
+    font-size: 48px;
+  }
+
+  .MoreMe__List__Item {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 460px) {
+  .MoreMe__Title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 400px) {
+  .MoreMe__List__Item {
+    font-size: 16px;
+  }
+}
